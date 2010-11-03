@@ -88,7 +88,7 @@ module ::RedisStore
     end
 
     module Store
-      include ::Redis::Store.rails3? ? Rails3 : Rails2
+      include Rails3
     end
   end
 end
