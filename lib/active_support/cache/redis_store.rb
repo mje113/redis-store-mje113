@@ -55,7 +55,7 @@ module ::RedisStore
       end
       
       def reset
-        @cache.connect
+        @data.connect
       end
 
       protected
