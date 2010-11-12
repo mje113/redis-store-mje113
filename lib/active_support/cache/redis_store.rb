@@ -55,7 +55,7 @@ module ::RedisStore
       end
       
       def reset
-        @data.connect
+        puts @data.inspect
       end
 
       protected
