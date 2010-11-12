@@ -13,9 +13,6 @@ class Redis
         super(key, value)
       end
       
-      def reset
-        super
-      end
     end
   end
 end

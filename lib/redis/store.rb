@@ -15,6 +15,10 @@ class Redis
     def to_s
       "Redis Client connected to #{@client.host}:#{@client.port} against DB #{@client.db}"
     end
+    
+    def reset
+      super
+    end
 
     private
       def _extend_marshalling(options)
