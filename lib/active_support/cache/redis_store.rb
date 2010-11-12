@@ -53,6 +53,9 @@ module ::RedisStore
           @data.keys(matcher).each { |key| delete_entry(key, options) }
         end
       end
+      
+      def reset
+      end
 
       protected
         def write_entry(key, entry, options)
