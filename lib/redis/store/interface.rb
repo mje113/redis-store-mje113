@@ -12,6 +12,10 @@ class Redis
       def setnx(key, value, options = nil)
         super(key, value)
       end
+      
+      def reset
+        super
+      end
     end
   end
 end
