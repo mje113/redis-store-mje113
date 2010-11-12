@@ -55,8 +55,7 @@ module ::RedisStore
       end
       
       def reset
-        puts @data.class
-        @data.reconnect
+        @data.client.reconnect
       end
 
       protected
